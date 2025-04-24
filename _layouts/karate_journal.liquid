@@ -1,0 +1,46 @@
+---
+layout: page
+---
+
+<h1>Notes from my karate journey — trainings, tournaments, and milestones.</h1>
+
+<p>Entries by Year</p>
+
+{{ content }}
+
+{% if page.collection and site[page.collection] %}
+  {% assign collection = site[page.collection] | sort: 'date' | reverse %}
+  {% assign current_year = '' %}
+
+  {% for item in collection %}
+    {% assign year = item.date | date: "%Y" %}
+    {% if year != current_year %}
+      {% unless forloop.first %}
+        </ul>
+      {% endunless %}
+      <h2 id="y{{ year }}" class="year-header">{{ year }}</h2>
+      <ul class="journal-entries">
+      {% assign current_year = year %}
+    {% endif %}
+
+    <li class="journal-entry">
+      <a href="{{ item.url | relative_url }}" class="card">
+        {% if item.cover %}
+          <img src="{{ item.cover | relative_url }}" alt="{{ item.title }} cover" class="card-cover">
+        {% endif %}
+        <div class="card-content">
+          <h3>{{ item.title }}</h3>
+          <p><small>{{ item.date | date: "%B %d, %Y" }}</small></p>
+
+          {% if item.status %}
+            <span class="status-tag">{{ item.status | upcase }}</span>
+          {% endif %}
+        </div>
+      </a>
+    </li>
+
+    {% if forloop.last %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+{% endif %}
