@@ -495,13 +495,6 @@ ninja.data = [{
           window.open("https://github.com/NehaKoppikar", "_blank");
         },
       },{
-        id: 'social-ieee',
-        title: 'IEEE Xplore',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://ieeexplore.ieee.org/author/37089349803/", "_blank");
-        },
-      },{
         id: 'social-kaggle',
         title: 'Kaggle',
         section: 'Socials',
@@ -556,13 +549,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://youtube.com/@nehakoppikar3890", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
