@@ -12,7 +12,7 @@ email: neha.koppikar@gmail.com # your email address
 # flickr_id: # your flickr id
 github_username: NehaKoppikar # your GitHub user name
 # gitlab_username: # your GitLab user name
-ieee_id: 37089349803 # your ieeexplore.ieee.org/author/id
+# ieee_id: 37089349803 # your ieeexplore.ieee.org/author/id
 # inspirehep_id: 1010907 # Inspire HEP author ID
 # instagram_id: # your instagram id
 kaggle_id: nehakoppikar # your kaggle id
@@ -45,7 +45,7 @@ rss_icon: true # set to true to show the RSS icon
 x_username: koppikar_neha # your X handle
 youtube_id: nehakoppikar3890 # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social: # can be any name here other than the ones already defined above
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+# custom_social: # can be any name here other than the ones already defined above
+#   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
+#   title: Custom Social
+#   url: https://www.alberteinstein.com/
